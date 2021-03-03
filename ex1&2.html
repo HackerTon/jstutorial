@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function userInput() {
+        var input = prompt("Please enter some value");
+        document.write("Value enter by user is : " + input);
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="button"
+      value="click me to proceed"
+      onclick="return userInput();"
+    />
+    <p id="text"></p>
+    <script>
+      document.write("Hello World ah!!");
+      document.getElementById("text").innerHTML = "Hello World!!";
+      console.log("Hello World !!");
+      alert("Hello World !!");
+    </script>
+  </body>
+</html>

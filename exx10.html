@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function createArray() {
+        var arr1 = ["January", "February", "March", "April"];
+        for (var i = 0; i < arr1.length; i++) {
+          display(arr1[i]);
+        }
+      }
+
+      function display(something) {
+        document.write(something + "<br>");
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="button"
+      value="click me to check"
+      onclick="return createArray();"
+    />
+  </body>
+</html>

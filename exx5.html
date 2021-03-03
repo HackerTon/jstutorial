@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function percntg(a, b, c) {
+        var grade = ((a + b + c) / 300) * 100;
+        status(grade);
+      }
+
+      function status(grade) {
+        if (grade < 40) {
+          document.write("Student failed.");
+        } else {
+          document.write("Student passed with " + grade + "% marks");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="button"
+      value="click me to check"
+      onclick="return percntg(70,20,30);"
+    />
+  </body>
+</html>

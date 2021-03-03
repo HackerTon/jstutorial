@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function manipulateArray() {
+        var arr = [22, 63, -95, -87, 68, -43];
+        document.write("Before manipulation :" + "<br>" + arr + "<br>");
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] < 0) {
+            arr[i] = -arr[i];
+          } else {
+            continue;
+          }
+        }
+        document.write("After manipulation :" + "<br>" + arr);
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="button"
+      value="click me to check output"
+      onclick="return manipulateArray();"
+    />
+  </body>
+</html>

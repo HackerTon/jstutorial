@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function reverseArray(){
+            var arr1 =[]; var arr2 =[];
+            var i;
+            for(i=0;i<20;i++){
+                arr1[i]=i+1;
+            }
+            document.write("Array 1 : "+"<br>"+arr1+"<br>");
+            for(i=0;i<20;i++){
+                arr2[i]=arr1[arr1.length-1-i];
+            }
+            document.write("Array 2 : "+"<br>"+arr2+"<br>");
+        }
+    </script>
+<body>
+    <input type="button" value="click me to check output" onclick="return reverseArray();">
+</body>
+</html>

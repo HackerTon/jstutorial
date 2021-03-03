@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function chck() {
+        var arr = [];
+        var i;
+        for (i = 0; i < 25; i++) {
+          arr[i] = Math.floor(Math.random() * 25 + 1);
+        }
+        var search = prompt(
+          "Enter a number between 1 to 25 to search in array"
+        );
+        var count = 0;
+        for (i = 0; i < 25; i++) {
+          if (arr[i] == search) {
+            count++;
+          }
+        }
+        document.write("Array elements are : ");
+        for (i = 0; i < 25; i++) {
+          document.write(arr[i] + ",");
+        }
+        if (count) {
+          document.write(
+            "<br>" + search + " occured " + count + " times in array."
+          );
+        } else {
+          document.write("<br>Number not found");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="click me to check" onclick="return chck();" />
+  </body>
+</html>
